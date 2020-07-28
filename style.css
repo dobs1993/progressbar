@@ -1,0 +1,77 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons to start and reset bar */
+
+.start {
+    padding: 2rem;
+    background: red;
+    color: white;
+}
+
+#reset {
+    padding: 2rem;
+    background: red;
+    color: white;
+}
+
+/* Progress bar outline and holder */
+
+.progress {
+    padding: 2rem;
+    border: 5px solid black;
+    height: 100px;
+    width: 700px;
+}
+
+/* Progress inner bar that turns green and shows progress - height positioned within .progress element and width added to show starting point */
+
+#bar {
+    position: absolute;
+    left: 0;
+    top:5px;
+    width: 5px;
+    height: 90px;
+    background: green;
+}
+
+/* Keyframes to move #bar green progress within holder */
+
+@keyframes move {
+    0% {
+        width: 0px;
+        background: green;
+    }
+    5%{
+        width: 20px;
+        background: green;
+    }
+    15%{
+        width: 150px;
+        background: green;
+    }
+    25%{
+        width: 250px;
+        background: green;
+    }
+    50% {
+        width: 400ppx;
+        background: green;
+    }
+    75% {
+        width:500px;
+        background: green;
+    }
+    100% {
+        width: 697px;
+        background: green;
+    }
+}
+
+
+
